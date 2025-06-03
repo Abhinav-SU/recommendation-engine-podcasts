@@ -1,36 +1,44 @@
 # 🎧 Podcast Recommender System
 
-This project builds a content-based recommendation engine to suggest similar podcasts based on descriptions. It uses text processing and cosine similarity to find matches.
+A content-based engine that recommends similar podcasts by analyzing show descriptions.
+
+## Table of Contents
+- [Features](#features)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Author](#author)
 
 ## 🚀 Features
-
 - TF-IDF and CountVectorizer embeddings
 - Cosine similarity scoring
-- Cleaned and structured podcast metadata
-- Interactive notebook for testing recommendations
+- Cleaned podcast metadata
+- Interactive Jupyter notebook for experimentation
 
 ## 📁 Dataset
+Place your dataset in `data/podcasts.csv`. The CSV should contain:
+- `title` – podcast title
+- `description` – text used for similarity comparison
+- `categories` – optional comma-separated categories
 
-Place your dataset in `data/podcasts.csv`.
+## 📦 Installation
+1. Clone this repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 🛠️ Tech Stack
-
-- Python 3
-- Pandas, NumPy
-- Scikit-learn
-- Seaborn, Matplotlib
-- SciPy
-
-## 🧪 How to Run
-
-1. Clone the repo  
-2. Add `podcasts.csv` to the `data/` folder  
-3. Run the `recommendation_engine.ipynb` notebook
+## 🧪 Usage
+1. Add `podcasts.csv` to the `data/` folder.
+2. Launch the notebook:
+   ```bash
+   jupyter notebook recommendation_engine.ipynb
+   ```
+   Follow the notebook to build the similarity matrix and generate recommendations.
 
 ## ✍️ Author
-
 Abhinav Bajpai  
-[GitHub](https://github.com/Abhinav-SU) | [LinkedIn](https://www.linkedin.com/in/abhinavbajpai0296)
+[GitHub](https://github.com/Abhinav-SU) • [LinkedIn](https://www.linkedin.com/in/abhinavbajpai0296)
 
 ---
 
